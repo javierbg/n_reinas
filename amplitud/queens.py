@@ -15,10 +15,9 @@ class Tablero:
 	def coste(self):
 		if self.costeCalculado is None:
 			self.costeCalculado = 0
-			for rA in self.reinas:
-				for rB in self.reinas:
-					if rA != rB:
-						if seAtacan(rA,rB): self.costeCalculado = self.costeCalculado+1
+			for rA in range(len(self.reinas)):
+				for rB in range(rA+1, len(self.reinas)):
+					if seAtacan(self.reinas[rA],self.reinas[rB]): self.costeCalculado = self.costeCalculado+1
 			
 		return self.costeCalculado
 		

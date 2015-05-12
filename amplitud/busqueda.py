@@ -1,7 +1,6 @@
 from queens import *
 
-dim = 3
-
+dim = 20
 
 t = Tablero(dim)
 inicializaTableroAleatorio(t)
