@@ -1,4 +1,4 @@
-# IA - N-Reina
+# IA - N-Reinas
 
 Distintos acercamientos al problema de las n-reinas, con el propósito de aprender sobre Inteligencia Artificial
 
