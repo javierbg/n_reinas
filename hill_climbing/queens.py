@@ -35,6 +35,7 @@ class Tablero:
 					linea += CASILLA_VACIA
 			
 			#Añade un espacio entre cada casilla
+			#para dar un aspecto cuadrado
 			linea = ' '.join(linea)
 			print(linea)
 		
