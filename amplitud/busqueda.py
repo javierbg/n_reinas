@@ -14,7 +14,7 @@ while frontera: #Mientras exista algún elemento en frontera
 	actual = frontera.pop(frontera.index(min(frontera)))
 
 	if actual.coste() == 0: #Esto significa que lo ha encontrado
-		break
+		breakS
 
 	#Lo añade a explorados
 	explorados.append(actual)
