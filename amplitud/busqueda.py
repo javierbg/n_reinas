@@ -1,12 +1,11 @@
 from queens import *
 
-dim = 8
+dim = 20
 
 t = Tablero(dim)
 inicializaTableroAleatorio(t)
 frontera = [t]
 explorados = []
-mejorCoste = t.coste()
 
 iteraciones = 0
 while frontera: #Mientras exista algún elemento en frontera
@@ -14,7 +13,7 @@ while frontera: #Mientras exista algún elemento en frontera
 	actual = frontera.pop(frontera.index(min(frontera)))
 
 	if actual.coste() == 0: #Esto significa que lo ha encontrado
-		breakS
+		break
 
 	#Lo añade a explorados
 	explorados.append(actual)

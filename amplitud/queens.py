@@ -41,6 +41,9 @@ class Tablero:
 	#Comparación (menor que) para poder ordenar por coste
 	def __lt__(self, other):
 		return self.coste() < other.coste()
+		
+	def __eq__(self, other):
+		return self.reinas == other.reinas
 
 
 
