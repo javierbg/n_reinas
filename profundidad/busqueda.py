@@ -1,6 +1,7 @@
+import sys #Línea de argumentos
 from queens import *
 
-dim = 5
+dim = int(sys.argv[1])
 
 t = Tablero(dim)
 inicializaTableroAleatorio(t)
